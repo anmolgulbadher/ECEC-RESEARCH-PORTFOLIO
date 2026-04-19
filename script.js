@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ${context.C.policies.map(policy => `<li><strong>${policy.split(':')[0]}:</strong> ${policy.split(':')[1] || ''}</li>`).join('')}
           </ul>
           <div class="placeholder-graph">
-            [Placeholder: Infographic/Chart for Statistics]<br>
             <span style="font-size: 0.85rem; font-weight: normal; margin-top: 0.5rem; display: block; color: var(--color-primary-dark);">${context.C.stats}</span>
           </div>
           <p style="margin-top: 1rem;"><strong>Systemic Impact:</strong> ${context.C.impact}</p>
