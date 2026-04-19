@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working with Families and Communities | Portofolio</title>
+  <meta name="description" content="A digital portfolio exploring diverse family and community contexts in early childhood education.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <span class="hero-pill">ECEC Research Portfolio</span>
+      <h1 class="hero-title">Working with Families and Communities</h1>
+      <p class="hero-subtitle">A digital portfolio exploring diverse family and community contexts in early childhood education, demonstrating practical strategies and critical partnerships.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="switchTab('economic')">Explore Contexts <span style="margin-left: 5px;">→</span></button>
+        <button class="btn btn-secondary" onclick="switchTab('references')">View References</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <div class="nav-brand">
+        📚 ECEC Portfolio
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <button class="nav-item active" data-target="home" onclick="switchTab('home')">Home</button>
+        <button class="nav-item" data-target="economic" onclick="switchTab('economic')">Economic</button>
+        <button class="nav-item" data-target="social" onclick="switchTab('social')">Social</button>
+        <button class="nav-item" data-target="cultural" onclick="switchTab('cultural')">Cultural & Diversity</button>
+        <button class="nav-item" data-target="health" onclick="switchTab('health')">Health & Wellbeing</button>
+        <button class="nav-item" data-target="crisis" onclick="switchTab('crisis')">Crisis & Emergency</button>
+        <button class="nav-item" data-target="references" onclick="switchTab('references')">References</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Container (Controlled by JS) -->
+  <main class="container" id="main-content">
+    
+    <!-- We will dynamically inject the tab panes here or toggle visibility of static ones -->
+    
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h3 style="color: white; margin-bottom: 0.5rem;">Early Childhood Education Portfolio</h3>
+      <p>Working with Families and Communities</p>
+      <div style="margin-top: 1rem; margin-bottom: 1rem; height: 1px; background: rgba(255,255,255,0.1);"></div>
+      <p style="font-size: 0.85rem;">Designed for academic submission. <a href="#" onclick="switchTab('references'); return false;">View References</a></p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
